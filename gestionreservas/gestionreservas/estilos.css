@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+}
+
+.banner{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("fondo.jpeg") center/cover no-repeat;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color:#ffff;
+    padding-bottom:20px;
+}
+
+.card-contenedor {
+    display:grid;
+    grid-template-columns: 420px 420px;
+    
+
+}
+
+.card-img {
+    background: url("tres.jpg") center/cover no-repeat;
+}
+
+.banner h2 {
+    padding-bottom:40px;
+    margin-bottom:20px;
+    
+}
+
+.card-contenido {
+    background:#fff;
+    height:330px;
+}
+
+.card-contenido h3 {
+    text-align:center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight:500;
+}
+
+.form-row{
+    display:flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input {
+    display:block;
+    width:100%;
+    margin:15px 12px;
+    padding: 5px;
+    font-family:'Poppins', sans-serif;
+    outline:none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight:300;
+}
+
+form input[type = text], 
+form input[type = number], 
+form input[type = date],
+form input[type = time],
+form input::placeholder,
+select{
+
+color: #5f5e5e;
+}
+
+form input[type = submit] {
+    color: #fff;
+    background: rgb(209, 7, 175);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+
+#reservas{
+    display:grid;
+    /* grid-template-columns: 410px 410px; */
+    grid-template-columns: 293px 293px 293px;
+    grid-gap: 15px 15px;
+}
+
+
+@media(max-width:992px){
+    .card-contenedor {
+       
+        grid-template-columns: 100%;
+        
+        }
+
+        .card-img{
+            height:330px;
+        }
+
+    #reservas {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+        padding:0;
+        width:420px;
+        
+
+    }
+
+
+ 
+    
+    
+    }
+
+
+    #administraReservas {
+        margin-top:20px;
+        text-align: center;
+      
+       
+       
+    }
+
+    
+    #reservas {
+       
+        padding:0;
+        
+
+    }
+
+
